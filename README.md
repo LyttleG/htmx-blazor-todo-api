@@ -1,4 +1,4 @@
-# TodoApi in HTMX
+# TodoApi in HTMX within Blazor components
 
 `TodoApi in HTMX` provides methods for mapping endpoints related to Todo items in an ASP.NET Core application using HTMX. This simplifies the process of setting up routes for CRUD operations on Todo items.
 
@@ -97,7 +97,7 @@ public class AddTodoItem
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
-Created by [**Gérôme Guillemin**](https://github.com/LyttleG/) on *April 1st, 2025*  
+Created by [**GÃ©rÃ´me Guillemin**](https://github.com/LyttleG/) on *April 1st, 2025*  
 
 ## License
 
