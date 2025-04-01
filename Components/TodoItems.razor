@@ -1,0 +1,11 @@
+﻿<div>
+    @foreach (var item in Todos)
+    {
+        <TodoItem Model="@item" />
+    }
+    <TodoForm />
+</div>
+
+@code {
+    [Parameter] public IEnumerable<TodoItemModel> Todos { get; set; } = Enumerable.Empty<TodoItemModel>();
+}

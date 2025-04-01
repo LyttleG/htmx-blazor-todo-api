@@ -1,0 +1,29 @@
+﻿<div>
+    <p>@Model?.Content</p>
+
+    @if (Model is { IsCompleted: true })
+    {
+        <input type="checkbox"
+               checked hx-post="/todos/@Model.Id/toggle"
+               hx-target="closest div"
+               hx-swap="outerHTML" />
+    }
+    else
+    {
+        <input type="checkbox"
+               hx-post="/todos/@Model?.Id/toggle"
+               hx-target="closest div"
+               hx-swap="outerHTML" />
+    }
+
+    <button hx-delete="/todos/@Model?.Id"
+            hx-target="closest div"
+            hx-swap="outerHTML">
+        X
+    </button>
+    <hr />
+</div>
+
+@code {
+    [Parameter] public TodoItemModel? Model { get; set; }
+}

@@ -1,0 +1,13 @@
+﻿<form hx-post="/todos"
+      hx-swap="beforebegin"
+      hx-ext="json-enc">
+
+    <input type="text"
+           name=@(nameof(AddTodoItem.Content)) />
+
+    <button type="submit">Add</button>
+</form>
+
+@code {
+
+}
